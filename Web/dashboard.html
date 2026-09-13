@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>My Dashboard - JobPortal</title>
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+<!-- ================= NAVBAR ================= -->
+
+<header>
+
+    <div class="logo">
+        💼 JobPortal
+    </div>
+
+    <nav>
+
+        <a href="index.html">
+            Home
+        </a>
+
+        <a href="index.html#jobs">
+            Find Jobs
+        </a>
+
+        <a href="dashboard.html">
+            My Dashboard
+        </a>
+
+        <a href="login.html">
+            Logout
+        </a>
+
+    </nav>
+
+</header>
+
+
+<!-- ================= DASHBOARD ================= -->
+
+<section class="dashboard">
+
+    <!-- Welcome -->
+
+    <div class="dashboard-header">
+
+        <div>
+
+            <h1>
+                Welcome, <span id="userName">User</span> 👋
+            </h1>
+
+            <p>
+                Manage your profile and track your job applications.
+            </p>
+
+        </div>
+
+    </div>
+
+
+    <!-- ================= PROFILE ================= -->
+
+    <div class="profile-card">
+
+        <div class="profile-icon">
+            👤
+        </div>
+
+        <div class="profile-info">
+
+            <h2 id="profileName">
+                Loading...
+            </h2>
+
+            <p>
+                📧 <span id="profileEmail">
+                    Loading...
+                </span>
+            </p>
+
+            <p>
+                🎯 Job Seeker
+            </p>
+
+        </div>
+
+    </div>
+
+
+    <!-- ================= STATISTICS ================= -->
+
+    <div class="application-stats">
+
+        <div class="application-stat">
+
+            <div class="stat-icon">
+                📋
+            </div>
+
+            <h2 id="totalApplications">
+                0
+            </h2>
+
+            <p>
+                Total Applications
+            </p>
+
+        </div>
+
+
+        <div class="application-stat">
+
+            <div class="stat-icon">
+                ⏳
+            </div>
+
+            <h2 id="pendingApplications">
+                0
+            </h2>
+
+            <p>
+                Pending
+            </p>
+
+        </div>
+
+
+        <div class="application-stat">
+
+            <div class="stat-icon">
+                ✅
+            </div>
+
+            <h2 id="selectedApplications">
+                0
+            </h2>
+
+            <p>
+                Selected
+            </p>
+
+        </div>
+
+
+        <div class="application-stat">
+
+            <div class="stat-icon">
+                ❌
+            </div>
+
+            <h2 id="rejectedApplications">
+                0
+            </h2>
+
+            <p>
+                Rejected
+            </p>
+
+        </div>
+
+    </div>
+
+
+    <!-- ================= APPLICATIONS ================= -->
+
+    <div class="my-applications">
+
+        <div class="section-heading">
+
+            <div>
+
+                <h2>
+                    My Applications
+                </h2>
+
+                <p>
+                    Track all the jobs you have applied for.
+                </p>
+
+            </div>
+
+        </div>
+
+
+        <div id="dashboardApplicationList">
+
+            <div class="loading">
+                Loading applications...
+            </div>
+
+        </div>
+
+    </div>
+
+
+</section>
+
+
+<!-- ================= FOOTER ================= -->
+
+<footer>
+
+    <div>
+
+        <h2>
+            💼 JobPortal
+        </h2>
+
+        <p>
+            Connecting talented people with great opportunities.
+        </p>
+
+    </div>
+
+
+    <div>
+
+        <h3>
+            Quick Links
+        </h3>
+
+        <a href="index.html">
+            Home
+        </a>
+
+        <a href="index.html#jobs">
+            Find Jobs
+        </a>
+
+    </div>
+
+
+    <div>
+
+        <h3>
+            Account
+        </h3>
+
+        <a href="dashboard.html">
+            My Dashboard
+        </a>
+
+        <a href="login.html">
+            Logout
+        </a>
+
+    </div>
+
+</footer>
+
+
+<div class="copyright">
+
+    © 2026 JobPortal | Java + MySQL Project
+
+</div>
+
+
+<script src="script.js"></script>
+
+</body>
+
+</html>

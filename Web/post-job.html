@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Recruiter Dashboard - Job Portal</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header>
+
+    <div class="logo">
+        💼 JobPortal
+    </div>
+
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="index.html#jobs">Jobs</a>
+        <a href="applications.html">Applications</a>
+        <a href="post-job.html">Recruiter Dashboard</a>
+        <a href="login.html">Logout</a>
+    </nav>
+
+</header>
+
+
+<section class="dashboard">
+
+    <div class="dashboard-header">
+
+        <div>
+            <h1>Recruiter Dashboard</h1>
+
+            <p>
+                Manage your job postings and find talented candidates.
+            </p>
+        </div>
+
+        <button
+                class="primary-btn"
+                onclick="showJobForm()">
+
+            + Post New Job
+
+        </button>
+
+    </div>
+
+
+    <!-- POST JOB FORM -->
+
+    <div
+            id="jobForm"
+            class="job-form"
+            style="display: none;">
+
+        <h2>Post a New Job</h2>
+
+        <p class="form-subtitle">
+            Add complete information about the job.
+        </p>
+
+
+        <div class="form-grid">
+
+            <input
+                    type="text"
+                    id="jobTitle"
+                    placeholder="Job Title">
+
+            <input
+                    type="text"
+                    id="jobLocation"
+                    placeholder="Location">
+
+
+            <input
+                    type="text"
+                    id="jobSalary"
+                    placeholder="Salary">
+
+            <input
+                    type="text"
+                    id="jobType"
+                    placeholder="Job Type (Full Time / Part Time)">
+
+
+            <input
+                    type="text"
+                    id="jobSkills"
+                    placeholder="Required Skills">
+
+
+            <input
+                    type="text"
+                    id="jobCompany"
+                    placeholder="Company Name">
+
+
+            <textarea
+                    id="jobDescription"
+                    placeholder="Job Description"></textarea>
+
+        </div>
+
+
+        <div class="form-buttons">
+
+            <button
+                    class="primary-btn"
+                    onclick="postJob()">
+
+                Post Job
+
+            </button>
+
+            <button
+                    class="cancel-btn"
+                    onclick="hideJobForm()">
+
+                Cancel
+
+            </button>
+
+        </div>
+
+    </div>
+
+
+    <!-- JOB LIST -->
+
+    <div class="my-jobs">
+
+        <div class="section-heading">
+
+            <div>
+                <h2>My Job Postings</h2>
+
+                <p>
+                    Manage the jobs posted by your company.
+                </p>
+            </div>
+
+        </div>
+
+
+        <div id="recruiterJobList">
+
+            <div class="loading">
+                Loading jobs...
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<footer>
+
+    <div>
+
+        <h2>💼 JobPortal</h2>
+
+        <p>
+            Connecting talented people with great opportunities.
+        </p>
+
+    </div>
+
+
+    <div>
+
+        <h3>Quick Links</h3>
+
+        <a href="index.html">
+            Home
+        </a>
+
+        <a href="index.html#jobs">
+            Jobs
+        </a>
+
+    </div>
+
+
+    <div>
+
+        <h3>Recruiter</h3>
+
+        <a href="post-job.html">
+            Dashboard
+        </a>
+
+        <a href="login.html">
+            Logout
+        </a>
+
+    </div>
+
+</footer>
+
+
+<div class="copyright">
+
+    © 2026 JobPortal | Java + MySQL Project
+
+</div>
+
+
+<script src="script.js"></script>
+
+</body>
+
+</html>

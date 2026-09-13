@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>Job Portal</title>
+
+    <link rel="stylesheet"
+          href="style.css">
+
+</head>
+
+<body>
+
+
+<!-- ================= NAVBAR ================= -->
+
+<header>
+
+    <div class="logo">
+        💼 JobPortal
+    </div>
+
+    <nav>
+
+        <a href="index.html">Home</a>
+
+        <a href="#jobs">Jobs</a>
+
+        <a href="applications.html">Applications</a>
+
+        <a href="login.html">Login</a>
+
+        <a href="register.html" class="nav-btn">
+            Register
+        </a>
+
+    </nav>
+
+</header>
+
+
+<!-- ================= HERO ================= -->
+
+<section class="hero">
+
+    <div class="hero-content">
+
+        <span class="hero-badge">
+            🚀 Find your next opportunity
+        </span>
+
+        <h1>
+            Find a Job That
+            <span>Fits Your Future</span>
+        </h1>
+
+        <p>
+            Discover exciting opportunities from top companies
+            and take the next step in your career.
+        </p>
+
+
+        <!-- SEARCH -->
+
+        <div class="search-container">
+
+            <input
+                    type="text"
+                    id="searchInput"
+                    placeholder="🔍 Search job, skill or company..."
+            >
+
+            <input
+                    type="text"
+                    id="locationInput"
+                    placeholder="📍 Location"
+            >
+
+            <button onclick="searchJobs()">
+                Search Jobs
+            </button>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- ================= STATS ================= -->
+
+<section class="stats">
+
+    <div class="stat-card">
+
+        <h2>100+</h2>
+
+        <p>Jobs Available</p>
+
+    </div>
+
+
+    <div class="stat-card">
+
+        <h2>50+</h2>
+
+        <p>Companies</p>
+
+    </div>
+
+
+    <div class="stat-card">
+
+        <h2>500+</h2>
+
+        <p>Job Seekers</p>
+
+    </div>
+
+
+    <div class="stat-card">
+
+        <h2>25+</h2>
+
+        <p>Job Categories</p>
+
+    </div>
+
+</section>
+
+
+<!-- ================= CATEGORIES ================= -->
+
+<section class="categories">
+
+    <h2>Explore Job Categories</h2>
+
+    <p class="section-subtitle">
+        Find opportunities based on your skills
+    </p>
+
+
+    <div class="category-grid">
+
+        <div class="category-card"
+             onclick="filterCategory('Java')">
+
+            <div class="category-icon">☕</div>
+
+            <h3>Java Development</h3>
+
+            <p>20+ Jobs</p>
+
+        </div>
+
+
+        <div class="category-card"
+             onclick="filterCategory('Web')">
+
+            <div class="category-icon">🌐</div>
+
+            <h3>Web Development</h3>
+
+            <p>30+ Jobs</p>
+
+        </div>
+
+
+        <div class="category-card"
+             onclick="filterCategory('Data')">
+
+            <div class="category-icon">📊</div>
+
+            <h3>Data & Analytics</h3>
+
+            <p>15+ Jobs</p>
+
+        </div>
+
+
+        <div class="category-card"
+             onclick="filterCategory('Software')">
+
+            <div class="category-icon">💻</div>
+
+            <h3>Software Engineering</h3>
+
+            <p>25+ Jobs</p>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- ================= JOBS ================= -->
+
+<section class="jobs" id="jobs">
+
+    <div class="section-heading">
+
+        <div>
+
+            <h2>Latest Job Opportunities</h2>
+
+            <p>
+                Explore the latest openings
+            </p>
+
+        </div>
+
+        <button class="outline-btn"
+                onclick="loadJobs()">
+
+            View All Jobs →
+
+        </button>
+
+    </div>
+
+
+    <div id="jobList">
+
+        <div class="loading">
+            Loading jobs...
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- ================= WHY US ================= -->
+
+<section class="why-us">
+
+    <h2>Why Choose JobPortal?</h2>
+
+    <p class="section-subtitle">
+        Everything you need to find your next opportunity
+    </p>
+
+
+    <div class="why-grid">
+
+        <div class="why-card">
+
+            <div class="why-icon">
+                🔎
+            </div>
+
+            <h3>Easy Job Search</h3>
+
+            <p>
+                Quickly find jobs according to your
+                skills, location and interests.
+            </p>
+
+        </div>
+
+
+        <div class="why-card">
+
+            <div class="why-icon">
+                🏢
+            </div>
+
+            <h3>Top Companies</h3>
+
+            <p>
+                Explore opportunities from growing
+                companies and organizations.
+            </p>
+
+        </div>
+
+
+        <div class="why-card">
+
+            <div class="why-icon">
+                ⚡
+            </div>
+
+            <h3>Quick Applications</h3>
+
+            <p>
+                Apply for jobs easily and track your
+                applications in one place.
+            </p>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- ================= CTA ================= -->
+
+<section class="cta">
+
+    <h2>
+        Ready to Start Your Career?
+    </h2>
+
+    <p>
+        Create your account and discover your next opportunity.
+    </p>
+
+    <a href="register.html">
+        Create Free Account →
+    </a>
+
+</section>
+
+
+<!-- ================= FOOTER ================= -->
+
+<footer>
+
+    <div>
+
+        <h2>💼 JobPortal</h2>
+
+        <p>
+            Connecting talented people with great opportunities.
+        </p>
+
+    </div>
+
+
+    <div>
+
+        <h3>Quick Links</h3>
+
+        <a href="index.html">Home</a>
+
+        <a href="#jobs">Jobs</a>
+
+        <a href="applications.html">
+            Applications
+        </a>
+
+    </div>
+
+
+    <div>
+
+        <h3>Account</h3>
+
+        <a href="login.html">Login</a>
+
+        <a href="register.html">Register</a>
+
+        <a href="post-job.html">Post a Job</a>
+
+    </div>
+
+</footer>
+
+
+<div class="copyright">
+
+    © 2026 JobPortal | Java + MySQL Project
+
+</div>
+
+
+<script src="script.js"></script>
+
+</body>
+
+</html>
