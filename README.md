@@ -1,175 +1,448 @@
 # 💼 JobPortal
 
 <p align="center">
-  <h1 align="center">💼 JobPortal</h1>
-  <p align="center">
-    <b>Online Job Recruitment & Application Management System</b>
-  </p>
-  <p align="center">
-    A full-stack web application built using Core Java, JDBC, MySQL, HTML, CSS and JavaScript.
-  </p>
+
+<img src="https://capsule-render.vercel.app/api?type=waving&color=0:2563EB,100:7C3AED&height=220&section=header&text=JobPortal&fontSize=60&fontColor=ffffff&animation=fadeIn&fontAlignY=38&desc=Online%20Job%20Recruitment%20Platform&descAlignY=58&descSize=20"/>
+
+</p>
+
+<p align="center">
+
+<img src="https://readme-typing-svg.demolab.com?font=Fira+Code&size=22&duration=3000&pause=1000&color=2563EB&center=true&vCenter=true&width=750&lines=Connecting+Job+Seekers+with+Recruiters;Core+Java+%7C+JDBC+%7C+MySQL;HTML+%7C+CSS+%7C+JavaScript;Complete+Frontend+%2B+Backend+%2B+Database+Project"/>
+
+</p>
+
+<p align="center">
+
+<a href="https://github.com/govind-kevat/JobPortal">
+<img src="https://img.shields.io/github/stars/govind-kevat/JobPortal?style=for-the-badge&logo=github&label=STARS"/>
+</a>
+
+<a href="https://github.com/govind-kevat/JobPortal">
+<img src="https://img.shields.io/github/forks/govind-kevat/JobPortal?style=for-the-badge&logo=github&label=FORKS"/>
+</a>
+
+<img src="https://img.shields.io/badge/Java-26-orange?style=for-the-badge&logo=openjdk"/>
+<img src="https://img.shields.io/badge/MySQL-Database-blue?style=for-the-badge&logo=mysql"/>
+
 </p>
 
 ---
 
-## 📌 Project Overview
+## 🌟 About The Project
 
-**JobPortal** is a web-based job recruitment platform that connects **Job Seekers** and **Recruiters** through a centralized system.
+**JobPortal** is a full-stack web-based recruitment platform designed to connect **Job Seekers** and **Recruiters** through a centralized job management system.
 
-The application allows job seekers to register, log in, search for available jobs, apply for jobs and track their applications.
-
-Recruiters can log in and manage job postings by creating, viewing, updating and deleting job listings.
-
-The project demonstrates a complete **Frontend → Backend → Database** workflow using:
-
-- HTML
-- CSS
-- JavaScript
-- Core Java
-- Java HTTP Server
-- JDBC
-- MySQL
-
----
-
-# 🚀 Features
-
-## 👨‍💻 Job Seeker
-
-- User Registration
-- User Login
-- Browse Available Jobs
-- Search Jobs
-- View Job Information
-- Apply for Jobs
-- View Applied Jobs
-- Track Application Status
-- Personal Dashboard
-- Application Statistics
-
-### Job Seeker Dashboard
-
-The dashboard displays:
+The application provides two major user flows:
 
 ```text
-┌──────────────────────────────┐
-│       My Dashboard           │
-├──────────────────────────────┤
-│ Total Applications           │
-│ Pending Applications         │
-│ Selected Applications        │
-│ Rejected Applications        │
-└──────────────────────────────┘
+                    💼 JOBPORTAL
+                         │
+              ┌──────────┴──────────┐
+              │                     │
+         👨‍💻 JOB SEEKER         🏢 RECRUITER
+              │                     │
+        Register/Login            Login
+              │                     │
+         Browse Jobs            Post Job
+              │                  Edit Job
+          Search Jobs           Delete Job
+              │
+          Apply Job
+              │
+          Dashboard
+              │
+      Track Applications
 ```
 
 ---
 
-# 🏢 Recruiter
+# ✨ Features
 
-Recruiters can manage job postings.
+<table>
+<tr>
+<td width="50%">
 
-### Recruiter Operations
+### 👨‍💻 Job Seeker
 
-```text
-Create Job
-    ↓
-View Job
-    ↓
-Edit Job
-    ↓
-Delete Job
-```
+- 🔐 Registration & Login
+- 🔎 Search Jobs
+- 💼 Browse Job Listings
+- 📝 Apply for Jobs
+- 📋 View Applications
+- 📊 Application Dashboard
+- ⏳ Track Application Status
+- ✅ Selected Applications
+- ❌ Rejected Applications
 
-Recruiters can add:
+</td>
 
-- Job Title
-- Job Description
-- Required Skills
-- Salary
-- Location
-- Job Type
+<td width="50%">
+
+### 🏢 Recruiter
+
+- 🔐 Recruiter Login
+- ➕ Post New Jobs
+- 👀 View Job Listings
+- ✏️ Edit Job Details
+- 🗑️ Delete Job Listings
+- 💰 Add Salary Information
+- 📍 Add Job Location
+- 🛠️ Add Required Skills
+
+</td>
+</tr>
+</table>
 
 ---
 
 # 🛠️ Technology Stack
 
-| Technology | Purpose |
-|------------|---------|
-| Java | Backend development |
-| Core Java | Application logic |
-| HttpServer | HTTP server |
-| JDBC | Database connectivity |
-| MySQL | Relational database |
-| SQL | Database operations |
-| HTML5 | Frontend structure |
-| CSS3 | UI design |
-| JavaScript | Client-side functionality |
-| Fetch API | Frontend-backend communication |
-| IntelliJ IDEA | Development environment |
-| Git | Version control |
-| GitHub | Source code hosting |
+<p align="center">
+
+<img src="https://skillicons.dev/icons?i=java,mysql,html,css,js,git,github,idea"/>
+
+</p>
+
+| Technology | Usage |
+|---|---|
+| ☕ **Java** | Backend development |
+| 🌐 **HttpServer** | HTTP server |
+| 🔌 **JDBC** | Database connectivity |
+| 🗄️ **MySQL** | Relational database |
+| 📜 **SQL** | Database queries |
+| 🧱 **HTML5** | Web structure |
+| 🎨 **CSS3** | UI & responsive design |
+| ⚡ **JavaScript** | Client-side functionality |
+| 🔄 **Fetch API** | Frontend ↔ Backend communication |
+| 🧠 **IntelliJ IDEA** | Development |
+| 🔧 **Git** | Version control |
+| 🐙 **GitHub** | Repository & collaboration |
 
 ---
 
 # 🏗️ System Architecture
 
 ```text
-                     ┌─────────────────────┐
-                     │      Web Browser    │
-                     │    HTML/CSS/JS      │
-                     └──────────┬──────────┘
-                                │
-                                │ HTTP Request
-                                ▼
-                     ┌─────────────────────┐
-                     │    Java Backend     │
-                     │      HttpServer     │
-                     └──────────┬──────────┘
-                                │
-                                │ DAO Layer
-                                ▼
-                     ┌─────────────────────┐
-                     │        JDBC         │
-                     │ Database Connectivity│
-                     └──────────┬──────────┘
-                                │
-                                │ SQL Queries
-                                ▼
-                     ┌─────────────────────┐
-                     │       MySQL         │
-                     │      Database       │
-                     └─────────────────────┘
+┌───────────────────────────────────────────────────┐
+│                   WEB BROWSER                     │
+│                                                   │
+│             HTML + CSS + JavaScript               │
+└───────────────────────┬───────────────────────────┘
+                        │
+                        │ HTTP Requests
+                        ▼
+┌───────────────────────────────────────────────────┐
+│                 JAVA BACKEND                      │
+│                                                   │
+│              Java HttpServer                     │
+│                                                   │
+│       /api/login   /api/jobs   /api/apply        │
+│       /api/register /api/post-job                │
+└───────────────────────┬───────────────────────────┘
+                        │
+                        ▼
+┌───────────────────────────────────────────────────┐
+│                    DAO LAYER                      │
+│                                                   │
+│ UserDAO | JobDAO | CompanyDAO | ApplicationDAO   │
+└───────────────────────┬───────────────────────────┘
+                        │
+                        ▼
+┌───────────────────────────────────────────────────┐
+│                     JDBC                          │
+│                                                   │
+│ Connection | PreparedStatement | ResultSet        │
+└───────────────────────┬───────────────────────────┘
+                        │
+                        ▼
+┌───────────────────────────────────────────────────┐
+│                    MySQL                          │
+│                                                   │
+│ Users | Companies | Jobs | Applications           │
+└───────────────────────────────────────────────────┘
 ```
 
 ---
 
-# 🧠 Application Architecture
+# 🧠 Architecture Pattern
 
-The project follows a simple layered architecture.
+The project uses a simple **layered architecture** with the **DAO (Data Access Object) pattern**.
 
 ```text
 Presentation Layer
         │
-        │ HTML / CSS / JavaScript
+        ▼
+HTML / CSS / JavaScript
+        │
         ▼
 HTTP API Layer
         │
-        │ Java HttpServer
+        ▼
+Java HttpServer
+        │
         ▼
 DAO Layer
         │
-        │ JDBC
         ▼
-Database Layer
+JDBC
         │
-        │ SQL
         ▼
-MySQL Database
+MySQL
+```
+
+### Why DAO?
+
+The DAO layer separates database logic from the rest of the application.
+
+```text
+UserDAO
+     ↓
+User Operations
+
+JobDAO
+     ↓
+Job Operations
+
+CompanyDAO
+     ↓
+Company Operations
+
+ApplicationDAO
+     ↓
+Application Operations
+```
+
+Benefits:
+
+- Better separation of concerns
+- Cleaner code
+- Easier maintenance
+- Reusable database operations
+- Better project structure
+
+---
+
+# 🗄️ Database Architecture
+
+## Database
+
+```text
+job_portal
+```
+
+### Tables
+
+```text
+users
+companies
+jobs
+applications
+```
+
+### Entity Relationship
+
+```text
+             ┌──────────────┐
+             │    USERS     │
+             └──────┬───────┘
+                    │
+                    │ 1 : N
+                    ▼
+             ┌──────────────┐
+             │ APPLICATIONS │
+             └──────┬───────┘
+                    ▲
+                    │ N : 1
+                    │
+             ┌──────┴───────┐
+             │     JOBS     │
+             └──────┬───────┘
+                    │
+                    │ N : 1
+                    ▼
+             ┌──────────────┐
+             │  COMPANIES   │
+             └──────────────┘
 ```
 
 ---
 
-# 📂 Project Structure
+# 📊 Database Tables
+
+### 👤 Users
+
+```text
+id
+name
+email
+password
+role
+```
+
+### 🏢 Companies
+
+```text
+id
+company_name
+location
+website
+recruiter_id
+```
+
+### 💼 Jobs
+
+```text
+id
+title
+description
+skills
+salary
+location
+job_type
+company_id
+posted_date
+```
+
+### 📝 Applications
+
+```text
+id
+job_id
+user_id
+application_date
+status
+```
+
+---
+
+# 🔌 API Endpoints
+
+| Endpoint | Method | Description |
+|---|---|---|
+| `/api/register` | POST | Register user |
+| `/api/login` | POST | Authenticate user |
+| `/api/jobs` | GET | Get all jobs |
+| `/api/apply` | POST | Apply for job |
+| `/api/applications` | GET | Get user applications |
+| `/api/post-job` | POST | Create job |
+| `/api/update-job` | POST | Update job |
+| `/api/delete-job` | POST | Delete job |
+
+---
+
+# 🔄 Complete Application Flow
+
+## 🔐 Authentication
+
+```text
+Login Form
+    │
+    ▼
+JavaScript
+    │
+    ▼
+HTTP POST
+    │
+    ▼
+Java HttpServer
+    │
+    ▼
+UserDAO
+    │
+    ▼
+JDBC
+    │
+    ▼
+MySQL
+    │
+    ├── Valid ──► Dashboard
+    │
+    └── Invalid ► Error
+```
+
+---
+
+## 🔎 Job Search
+
+```text
+Search Input
+      │
+      ▼
+JavaScript
+      │
+      ▼
+GET /api/jobs
+      │
+      ▼
+JobDAO
+      │
+      ▼
+MySQL
+      │
+      ▼
+Job List
+      │
+      ▼
+Browser
+```
+
+---
+
+## 📝 Job Application
+
+```text
+Job Seeker
+    │
+    ▼
+Select Job
+    │
+    ▼
+Apply Now
+    │
+    ▼
+POST /api/apply
+    │
+    ▼
+ApplicationDAO
+    │
+    ▼
+MySQL
+    │
+    ▼
+Application Saved
+```
+
+---
+
+## 🏢 Recruiter Job Management
+
+```text
+Recruiter
+    │
+    ▼
+Post Job
+    │
+    ▼
+POST /api/post-job
+    │
+    ▼
+JobDAO
+    │
+    ▼
+MySQL
+    │
+    ▼
+Job Created
+    │
+    ├── Edit
+    │
+    └── Delete
+```
+
+---
+
+# 📁 Project Structure
 
 ```text
 JobPortal/
@@ -198,7 +471,6 @@ JobPortal/
 │                   └── UserDAO.java
 │
 ├── Web/
-│   │
 │   ├── index.html
 │   ├── login.html
 │   ├── register.html
@@ -215,399 +487,13 @@ JobPortal/
 
 ---
 
-# 🗄️ Database Design
+# ⚙️ Installation & Setup
 
-The application uses **MySQL** as its relational database.
-
-## Database
-
-```sql
-CREATE DATABASE job_portal;
-
-USE job_portal;
-```
-
----
-
-## Main Tables
-
-```text
-users
-companies
-jobs
-applications
-```
-
----
-
-## 👤 Users Table
-
-Stores user account information.
-
-```text
-users
-│
-├── id
-├── name
-├── email
-├── password
-└── role
-```
-
-Possible roles:
-
-```text
-JOB_SEEKER
-RECRUITER
-```
-
----
-
-## 🏢 Companies Table
-
-Stores company information.
-
-```text
-companies
-│
-├── id
-├── company_name
-├── location
-├── website
-└── recruiter_id
-```
-
----
-
-## 💼 Jobs Table
-
-Stores job posting information.
-
-```text
-jobs
-│
-├── id
-├── title
-├── description
-├── skills
-├── salary
-├── location
-├── job_type
-├── company_id
-└── posted_date
-```
-
----
-
-## 📄 Applications Table
-
-Stores job application information.
-
-```text
-applications
-│
-├── id
-├── job_id
-├── user_id
-├── application_date
-└── status
-```
-
-Application statuses include:
-
-```text
-APPLIED
-PENDING
-SELECTED
-REJECTED
-```
-
----
-
-# 🔗 Database Relationships
-
-```text
-                 USERS
-                   │
-                   │
-             1     │     N
-                   ▼
-             APPLICATIONS
-                   ▲
-                   │
-             1     │     N
-                   │
-                  JOBS
-                   ▲
-                   │
-             N     │     1
-                   │
-               COMPANIES
-```
-
-### Relationships
-
-```text
-User       → Applications
-Company    → Jobs
-Job        → Applications
-```
-
----
-
-# 🔄 Application Workflow
-
-## 🔐 Login Flow
-
-```text
-User
- │
- ▼
-Login Page
- │
- ▼
-JavaScript
- │
- ▼
-HTTP POST Request
- │
- ▼
-Java Login API
- │
- ▼
-UserDAO
- │
- ▼
-JDBC
- │
- ▼
-MySQL
- │
- ├── Valid User
- │       │
- │       ▼
- │   Dashboard
- │
- └── Invalid User
-         │
-         ▼
-       Error
-```
-
----
-
-# 🔎 Job Search Flow
-
-```text
-User
- │
- ▼
-Job Portal
- │
- ▼
-Search / Filter
- │
- ▼
-JavaScript
- │
- ▼
-GET /api/jobs
- │
- ▼
-JobDAO
- │
- ▼
-MySQL
- │
- ▼
-Job List
- │
- ▼
-Browser
-```
-
----
-
-# 📝 Job Application Flow
-
-```text
-Job Seeker
-    │
-    ▼
-Browse Jobs
-    │
-    ▼
-Select Job
-    │
-    ▼
-Apply Now
-    │
-    ▼
-POST /api/apply
-    │
-    ▼
-ApplicationDAO
-    │
-    ▼
-MySQL
-    │
-    ▼
-Application Saved
-```
-
----
-
-# 🏢 Recruiter Job Posting Flow
-
-```text
-Recruiter
-    │
-    ▼
-Post Job Form
-    │
-    ▼
-JavaScript
-    │
-    ▼
-POST /api/post-job
-    │
-    ▼
-JobDAO
-    │
-    ▼
-MySQL
-    │
-    ▼
-Job Created
-    │
-    ▼
-Job Appears on Portal
-```
-
----
-
-# 🔌 API Endpoints
-
-The backend exposes HTTP API endpoints for frontend communication.
-
-| Endpoint | Method | Description |
-|----------|--------|-------------|
-| `/api/register` | POST | Register a new user |
-| `/api/login` | POST | Authenticate user |
-| `/api/jobs` | GET | Retrieve all jobs |
-| `/api/apply` | POST | Apply for a job |
-| `/api/applications` | GET | Retrieve user applications |
-| `/api/post-job` | POST | Create a job |
-| `/api/update-job` | POST | Update a job |
-| `/api/delete-job` | POST | Delete a job |
-
----
-
-# 🧩 DAO Architecture
-
-Database operations are separated using the **DAO (Data Access Object) pattern**.
-
-```text
-UserDAO
-   │
-   └── User Database Operations
-
-
-JobDAO
-   │
-   └── Job Database Operations
-
-
-CompanyDAO
-   │
-   └── Company Database Operations
-
-
-ApplicationDAO
-   │
-   └── Application Database Operations
-```
-
-### Benefits
-
-- Separation of concerns
-- Better code organization
-- Easier maintenance
-- Reusable database operations
-- Cleaner backend architecture
-
----
-
-# 🔗 JDBC Architecture
-
-The project uses **JDBC (Java Database Connectivity)** to communicate with MySQL.
-
-```text
-Java Application
-       │
-       ▼
-DatabaseConnection
-       │
-       ▼
-MySQL JDBC Driver
-       │
-       ▼
-MySQL Server
-       │
-       ▼
-SQL Query
-       │
-       ▼
-ResultSet / Update Count
-```
-
-The project uses:
-
-- `Connection`
-- `PreparedStatement`
-- `ResultSet`
-- `SQLException`
-
-Parameterized `PreparedStatement` queries are used for database operations.
-
----
-
-# 💻 Frontend Architecture
-
-The frontend consists of:
-
-```text
-HTML
- │
- ├── Page Structure
- │
-CSS
- │
- ├── Layout
- ├── Components
- └── Responsive Design
- │
-JavaScript
- │
- ├── API Requests
- ├── Job Search
- ├── Login
- ├── Registration
- ├── Applications
- └── Dashboard
-```
-
----
-
-# ⚙️ Local Setup
-
-## 1. Clone the Repository
+## 1️⃣ Clone Repository
 
 ```bash
 git clone https://github.com/govind-kevat/JobPortal.git
 ```
-
-Move into the project:
 
 ```bash
 cd JobPortal
@@ -615,25 +501,27 @@ cd JobPortal
 
 ---
 
-# 2. Open in IntelliJ IDEA
+## 2️⃣ Open Project
 
-Open the cloned project in IntelliJ IDEA.
-
-Make sure Java/JDK is configured.
-
-Recommended:
+Open the project in:
 
 ```text
-JDK 26
+IntelliJ IDEA
+```
+
+Recommended JDK:
+
+```text
+Java 26
 ```
 
 ---
 
-# 3. Configure MySQL
+## 3️⃣ Configure MySQL
 
 Start MySQL Server.
 
-Create the database:
+Create database:
 
 ```sql
 CREATE DATABASE job_portal;
@@ -687,7 +575,7 @@ CREATE TABLE applications (
 
 ---
 
-# 4. Configure Database Connection
+# 🔌 JDBC Configuration
 
 Open:
 
@@ -695,7 +583,7 @@ Open:
 src/main/java/com/jobportal/DatabaseConnection.java
 ```
 
-Configure:
+Configure your local MySQL credentials:
 
 ```java
 private static final String URL =
@@ -708,27 +596,11 @@ private static final String PASSWORD =
         "YOUR_MYSQL_PASSWORD";
 ```
 
-Replace:
-
-```text
-YOUR_MYSQL_PASSWORD
-```
-
-with your local MySQL password.
-
-> ⚠️ Do not commit your real password to a public GitHub repository.
+> ⚠️ Never upload your real MySQL password to a public GitHub repository.
 
 ---
 
-# 5. MySQL Connector/J
-
-Make sure **MySQL Connector/J** is available to the project.
-
-If using Maven, configure the MySQL JDBC dependency in `pom.xml`.
-
----
-
-# 6. Run the Backend
+# ▶️ Run the Application
 
 Run:
 
@@ -736,21 +608,11 @@ Run:
 JobPortalServer.java
 ```
 
-The server should start on:
-
-```text
-http://localhost:8080
-```
-
-Expected console output:
+Expected console:
 
 ```text
 Job Portal started at http://localhost:8080
 ```
-
----
-
-# 7. Open the Website
 
 Open:
 
@@ -760,146 +622,45 @@ http://localhost:8080/index.html
 
 ---
 
-# 🧪 Testing
+# 🧪 Testing Flow
 
-## Job Seeker Testing
-
-```text
-1. Register
-2. Login
-3. Browse Jobs
-4. Search Jobs
-5. Click Apply
-6. Open Dashboard
-7. Check Applications
-```
-
----
-
-## Recruiter Testing
+### Job Seeker
 
 ```text
-1. Login as Recruiter
-2. Open Recruiter Page
-3. Add Job
-4. View Job
-5. Edit Job
-6. Delete Job
+Register
+   ↓
+Login
+   ↓
+Browse Jobs
+   ↓
+Search Job
+   ↓
+Apply
+   ↓
+Dashboard
+   ↓
+Track Application
 ```
 
----
-
-# 📊 Example Project Flow
+### Recruiter
 
 ```text
-                    JOBPORTAL
-                        │
-          ┌─────────────┴─────────────┐
-          │                           │
-      JOB SEEKER                   RECRUITER
-          │                           │
-      Register                       Login
-          │                           │
-        Login                    Post Job
-          │                           │
-      Search Jobs                 Edit Job
-          │                           │
-      Apply Job                  Delete Job
-          │
-      Dashboard
-          │
- Track Applications
-          │
-          └─────────────┐
-                        ▼
-                  JAVA BACKEND
-                        │
-                        ▼
-                      JDBC
-                        │
-                        ▼
-                     MYSQL
+Login
+   ↓
+Post Job
+   ↓
+View Job
+   ↓
+Edit Job
+   ↓
+Delete Job
 ```
-
----
-
-# 🔐 Security Considerations
-
-This project is primarily designed for **academic, learning and portfolio purposes**.
-
-For production deployment, the following improvements should be implemented:
-
-- Password hashing using BCrypt or Argon2
-- Secure session management
-- JWT or server-side authentication
-- Server-side authorization
-- Role-based access control
-- Environment variables for database credentials
-- Input validation
-- SQL injection protection
-- HTTPS
-- CSRF protection
-- Rate limiting
-- Secure HTTP headers
-- Duplicate application prevention
-
----
-
-# 🚧 Current Limitations
-
-The current version is intentionally simple and focuses on demonstrating the complete application workflow.
-
-Potential improvements include:
-
-```text
-Authentication
-      ↓
-Authorization
-      ↓
-Recruiter Ownership
-      ↓
-Application Management
-      ↓
-Admin Module
-```
-
----
-
-# 🔮 Future Enhancements
-
-## 👨‍💻 Job Seeker
-
-- Resume upload
-- Profile management
-- Saved jobs
-- Advanced filters
-- Job recommendations
-- Email notifications
-- Application withdrawal
-
-## 🏢 Recruiter
-
-- Recruiter dashboard
-- Applicant management
-- Application status updates
-- Candidate search
-- Resume viewing
-- Company profile
-
-## 👑 Admin
-
-- Admin dashboard
-- User management
-- Recruiter verification
-- Job moderation
-- Application monitoring
-- Analytics and reports
 
 ---
 
 # 📸 Screenshots
 
-Add your screenshots in a folder:
+Create this folder:
 
 ```text
 screenshots/
@@ -918,25 +679,110 @@ recruiter.png
 post-job.png
 ```
 
-Then add them to this README:
+Then add:
 
 ```markdown
 ## 🏠 Home Page
 
 ![Home Page](screenshots/home.png)
 
-## 🔐 Login Page
+## 🔐 Login
 
-![Login Page](screenshots/login.png)
+![Login](screenshots/login.png)
 
 ## 👤 Job Seeker Dashboard
 
 ![Dashboard](screenshots/dashboard.png)
 
-## 🏢 Recruiter Dashboard
+## 🏢 Recruiter
 
 ![Recruiter](screenshots/recruiter.png)
 ```
+
+---
+
+# 🔐 Security Considerations
+
+The current project is designed for **academic and portfolio purposes**.
+
+For production deployment, the following improvements should be implemented:
+
+- 🔒 Password hashing using BCrypt/Argon2
+- 🔑 Secure session management
+- 🛡️ Server-side authorization
+- 👥 Role-based access control
+- 🔐 Environment variables
+- ✅ Input validation
+- 🛡️ SQL injection prevention
+- 🌐 HTTPS
+- 🔄 CSRF protection
+- 🚦 Rate limiting
+- 🚫 Duplicate application prevention
+
+---
+
+# 🚧 Current Limitations
+
+The project intentionally uses a lightweight architecture suitable for learning and demonstration.
+
+Potential production improvements include:
+
+```text
+Current
+   │
+   ▼
+Core Java HttpServer
+   │
+   ▼
+JDBC
+   │
+   ▼
+MySQL
+
+Future
+   │
+   ▼
+Spring Boot
+   │
+   ▼
+REST API
+   │
+   ▼
+Authentication
+   │
+   ▼
+MySQL
+```
+
+---
+
+# 🔮 Future Enhancements
+
+### 👨‍💻 Job Seeker
+
+- 📄 Resume upload
+- 👤 Profile management
+- ⭐ Saved jobs
+- 🔎 Advanced filters
+- 🤖 Job recommendations
+- 📧 Email notifications
+
+### 🏢 Recruiter
+
+- 📊 Recruiter dashboard
+- 👥 Applicant management
+- 🔄 Application status updates
+- 📄 Resume viewing
+- 🏢 Company profile
+
+### 👑 Admin
+
+- 📊 Admin dashboard
+- 👥 User management
+- 🏢 Recruiter verification
+- 🛡️ Job moderation
+- 📈 Analytics
+- 📑 Reports
 
 ---
 
@@ -944,62 +790,21 @@ Then add them to this README:
 
 This project demonstrates practical understanding of:
 
-- Core Java
-- Object-Oriented Programming
-- Java HTTP Server
-- JDBC
-- SQL
-- MySQL
-- DAO Pattern
-- CRUD Operations
-- HTTP Request/Response
-- API Design
-- JavaScript Fetch API
-- Frontend-Backend Integration
-- Relational Database Design
-- Git
-- GitHub
-
----
-
-# 💡 Project Highlights
-
-### Backend
-
 ```text
-Core Java
-   +
-HttpServer
-   +
-DAO Pattern
-   +
-JDBC
-```
-
-### Frontend
-
-```text
-HTML
-   +
-CSS
-   +
-JavaScript
-   +
-Fetch API
-```
-
-### Database
-
-```text
-MySQL
-   +
-Relational Tables
-   +
-Primary Keys
-   +
-Foreign Keys
-   +
-SQL Queries
+☕ Core Java
+🧱 OOP
+🌐 HTTP Server
+🔌 JDBC
+🗄️ MySQL
+📜 SQL
+🏗️ DAO Pattern
+🔄 CRUD Operations
+🔗 API Integration
+⚡ JavaScript Fetch API
+🎨 Frontend Development
+🗃️ Database Design
+🔧 Git
+🐙 GitHub
 ```
 
 ---
@@ -1007,42 +812,64 @@ SQL Queries
 # 📈 Development Workflow
 
 ```text
-Requirement
-    ↓
+Requirement Analysis
+        ↓
 Database Design
-    ↓
+        ↓
 Java Model Classes
-    ↓
+        ↓
 DAO Layer
-    ↓
+        ↓
 HTTP APIs
-    ↓
-Frontend
-    ↓
+        ↓
+Frontend Development
+        ↓
 API Integration
-    ↓
+        ↓
 Testing
-    ↓
+        ↓
 Git
-    ↓
+        ↓
 GitHub
 ```
 
 ---
 
-# ⭐ Project Status
+# ⭐ Project Highlights
 
-```text
-Frontend              ✅ Completed
-Backend               ✅ Completed
-JDBC Integration      ✅ Completed
-MySQL Database        ✅ Completed
-Authentication        ✅ Implemented
-Job Management        ✅ Implemented
-Job Applications      ✅ Implemented
-Job Seeker Dashboard  ✅ Implemented
-GitHub Repository     ✅ Available
-```
+<table>
+<tr>
+<td align="center">💻<br><b>Full Stack</b></td>
+<td align="center">☕<br><b>Core Java</b></td>
+<td align="center">🔌<br><b>JDBC</b></td>
+<td align="center">🗄️<br><b>MySQL</b></td>
+</tr>
+
+<tr>
+<td align="center">🌐<br><b>HTTP APIs</b></td>
+<td align="center">🏗️<br><b>DAO Pattern</b></td>
+<td align="center">⚡<br><b>JavaScript</b></td>
+<td align="center">🐙<br><b>GitHub</b></td>
+</tr>
+</table>
+
+---
+
+# 📊 Project Status
+
+| Module | Status |
+|---|---|
+| Frontend | ✅ Completed |
+| Java Backend | ✅ Completed |
+| JDBC | ✅ Completed |
+| MySQL | ✅ Completed |
+| Registration | ✅ Completed |
+| Login | ✅ Completed |
+| Job Search | ✅ Completed |
+| Job Application | ✅ Completed |
+| Job Seeker Dashboard | ✅ Completed |
+| Recruiter Job Management | ✅ Completed |
+| GitHub Repository | ✅ Completed |
 
 ---
 
@@ -1050,9 +877,9 @@ GitHub Repository     ✅ Available
 
 ## Govind Kevat
 
-MCA Student | Java Developer
+**MCA Student | Java Developer**
 
-### Skills
+### Technical Skills
 
 ```text
 Java
@@ -1066,28 +893,46 @@ Git
 GitHub
 ```
 
-### GitHub
+### 🔗 Connect
 
-https://github.com/govind-kevat
+<p align="center">
 
-### Repository
+<a href="https://github.com/govind-kevat">
+<img src="https://img.shields.io/badge/GitHub-Govind%20Kevat-black?style=for-the-badge&logo=github"/>
+</a>
 
-https://github.com/govind-kevat/JobPortal
+</p>
 
 ---
 
 # ⭐ Support
 
-If you find this project useful, consider giving the repository a ⭐.
+If you find this project useful:
 
----
+⭐ **Star the repository**
 
-# 📜 License
+🍴 **Fork the repository**
 
-This project is created for **educational and portfolio purposes**.
+📢 **Share the project**
 
 ---
 
 <p align="center">
+
+<img src="https://capsule-render.vercel.app/api?type=waving&color=0:7C3AED,100:2563EB&height=120&section=footer"/>
+
+</p>
+
+<p align="center">
   <b>💼 JobPortal — Connecting Talent With Opportunities</b>
 </p>
+
+<p align="center">
+  Made with ☕ Java + 🗄️ MySQL + 🌐 Web Technologies
+</p>
+
+---
+
+## 📜 License
+
+This project is created for **educational and portfolio purposes**.
